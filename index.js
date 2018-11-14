@@ -24,3 +24,21 @@ function destructivelyRemoveFirstKitten() {
   kittens.shift();
   return (kittens);
 }
+
+kittens = ["Milo", "Otis", "Garfield"]
+
+function appendKitten(name) {
+  return ([...kittens, name]);
+}
+
+kittens = ["Milo", "Otis", "Garfield"]
+
+function prependKitten(name) {
+  return ([name, ...kittens]);
+}
+
+kittens = ["Milo", "Otis", "Garfield"]
+
+function removeLastKitten() {
+  return (kittens.slice(0, kittens.length - 1));
+}
